@@ -1,0 +1,33 @@
+﻿
+
+accept p1 prompt 'please enter 1 or 0: ';
+declare
+  a number;
+  begin
+    a :=&p1;
+    dbms_output.put_line('Number is: '||a);
+    end;
+    
+   
+    
+   
+
+-- FUNCTION  THAT ACCEPTS A NUMBER AS a parameter AND CHECK the NUMBER is prime OR NOT.
+
+CREATE OR REPLACE FUNCTION numero_primo (X IN NUMBER, y IN NUMBER)
+RETURN number IS
+Z number := 0;
+    BEGIN
+        z := (x*y)/2;
+    RETURN z;
+    END;
+
+BEGIN
+        dbms_output.put_Line('Numeroprimo 5: ' || Numeroprimo (5));
+END;
+      
+ SELECT Numeroprimo(5) AS MEM FROM DUAL; 
+ 
+ 
+--find the Difference BETWWEEN the square OF THE SUM AND the SUM OF the square OF the
+--FIRST N NATURAL numbers the squuare OF the SUM OF the FIRST ten NATURAL numbers IS (1+2+....10)**2 = 55**2 = 3025
